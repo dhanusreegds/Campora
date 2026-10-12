@@ -1,4 +1,8 @@
-# Campora - Learning Bridge
+## Campora – Campus Connect
+
+Connect juniors with seniors for academic guidance, projects, internships, and campus life.
+
+**Live Demo:** https://campora-74gs.onrender.com/
 
 Campora connects junior students (**Seekers**) with senior students (**Helpers**) for academic guidance, skill development, mentorship and campus networking. This is a working full-stack prototype: every page talks to a real Express API backed by MongoDB.
 
