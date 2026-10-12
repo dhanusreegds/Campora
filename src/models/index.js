@@ -1,0 +1,25 @@
+module.exports = {
+  User: require('./User'),
+  HelpRequest: require('./HelpRequest'),
+  Connection: require('./Connection'),
+  Message: require('./Message'),
+  Announcement: require('./Announcement'),
+  Benefit: require('./Benefit'),
+  Redemption: require('./Redemption'),
+  Notification: require('./Notification'),
+  PointTransaction: require('./PointTransaction'),
+  // Help Sessions and Help Rooms
+  MeetingRequest: require('./MeetingRequest'),
+  HelpRoom: require('./HelpRoom'),
+  RoomEvent: require('./RoomEvent'),
+  RoomSignal: require('./RoomSignal'),
+  RoomFile: require('./RoomFile'),
+  // Campus Challenges and streaks
+  CampusChallenge: require('./CampusChallenge'),
+  WeeklyChallenge: require('./WeeklyChallenge'),
+  ChallengeCompletion: require('./ChallengeCompletion'),
+  UserStreak: require('./UserStreak'),
+  StreakEvent: require('./StreakEvent'),
+  EventCheckin: require('./EventCheckin'),
+  NoticeLog: require('./NoticeLog'),
+};

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Register - Campora</title>
+</head>
+<body>
+  <div class="auth">
+    <aside class="auth-side">
+      <a class="brand" href="/" aria-label="Campora home"><img src="/assets/logo.svg" alt="" width="38" height="38"><span><span class="name">Campora</span><span class="tag">Learning Bridge</span></span></a>
+      <h1 id="side-title"></h1>
+      <p id="side-text"></p>
+      <svg class="art" viewBox="0 0 400 130" aria-hidden="true" focusable="false"><path d="M0 100 Q200 -30 400 100" fill="none" stroke="#E8DDC9" stroke-width="6" stroke-linecap="round"/><path d="M50 62V100M100 42V100M150 30V100M200 27V100M250 30V100M300 42V100M350 62V100" stroke="#A7B8C9" stroke-width="4" stroke-linecap="round"/><path d="M0 100H400" stroke="#E8DDC9" stroke-width="7"/><path d="M0 116q12-7 25 0t25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0" fill="none" stroke="#A7B8C9" stroke-width="3" stroke-linecap="round"/></svg>
+    </aside>
+    <main class="auth-main" id="main">
+      <div class="auth-box">
+        <div class="role-switch" role="navigation" aria-label="Choose account type">
+          <a href="?role=seeker" id="tab-seeker">Seeker</a>
+          <a href="?role=helper" id="tab-helper">Helper</a>
+        </div>
+        <div>
+          <h2 id="form-title" style="font-size:1.8rem"></h2>
+          <p class="muted" id="form-sub" style="margin-top:6px"></p>
+        </div>
+        <form id="register-form" class="stack" novalidate>
+          <div id="form-error" class="form-error" role="alert" hidden></div>
+          <div class="form-grid">
+            <div class="field full"><label for="name">Full name</label><input class="input" id="name" name="name" autocomplete="name" required maxlength="80"></div>
+            <div class="field"><label for="username">Username</label><input class="input" id="username" name="username" autocomplete="username" autocapitalize="none" required maxlength="24" placeholder="e.g. asha_r">
+              <span class="hint">Lowercase letters, numbers, underscores.</span></div>
+            <div class="field"><label for="password">Password</label><input class="input" id="password" name="password" type="password" autocomplete="new-password" required minlength="6"><span class="hint">At least 6 characters.</span></div>
+            <div class="field"><label for="department">Department</label><input class="input" id="department" name="department" maxlength="80"></div>
+            <div class="field"><label for="course">Course</label><input class="input" id="course" name="course" maxlength="80" placeholder="e.g. B.Tech CSE"></div>
+            <div class="field"><label for="year">Year of study</label>
+              <select class="select" id="year" name="year"><option value="">Select</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
+            <div class="field"><label for="skills" id="skills-label">Skills</label><input class="input" id="skills" name="skills" placeholder="Comma separated, e.g. Java, Python"></div>
+          </div>
+          <button class="btn btn-primary btn-lg" type="submit" id="submit">Create account</button>
+        </form>
+        <p class="muted">Already have an account? <a id="login-link" href="/login.html">Log in</a>. <a href="/">Back to home</a></p>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Campora logo">
+  <rect width="48" height="48" rx="13" fill="#4A6B8A"/>
+  <path d="M8 31 Q24 8 40 31" fill="none" stroke="#E8DDC9" stroke-width="3" stroke-linecap="round"/>
+  <path d="M15 22.6V31M24 19.2V31M33 22.6V31" stroke="#A7B8C9" stroke-width="2" stroke-linecap="round"/>
+  <path d="M6 31.5H42" stroke="#E8DDC9" stroke-width="3" stroke-linecap="round"/>
+  <path d="M10 37.5q3.5-2 7 0t7 0 7 0 7 0" fill="none" stroke="#A7B8C9" stroke-width="2" stroke-linecap="round"/>
+</svg>

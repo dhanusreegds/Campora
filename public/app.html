@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campora</title>
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#view">Skip to content</a>
+  <div class="app" id="app" hidden>
+    <aside class="sidebar" id="sidebar" aria-label="Sidebar">
+      <a class="brand" href="#/dashboard">
+        <img src="/assets/logo.svg" alt="" width="38" height="38">
+        <span><span class="name">Campora</span><span class="tag">Learning Bridge</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Main navigation"></nav>
+      <div class="sidebar-foot">
+        <div class="who" id="who"></div>
+        <button class="btn btn-ghost btn-sm" id="logout" type="button">Log out</button>
+      </div>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar"></button>
+        <span class="points-pill" id="points-pill" title="Reward points"></span>
+        <div class="bell" id="bell"></div>
+      </header>
+      <main class="content" id="view" tabindex="-1"></main>
+    </div>
+  </div>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
